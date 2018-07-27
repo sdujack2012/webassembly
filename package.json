@@ -1,0 +1,17 @@
+{
+  "name": "webassembly-test",
+  "version": "0.1.0",
+  "description": "webassembly test",
+  "main": "index.html",
+  "scripts": {
+    "start": "emcc dice-roll.c -s WASM=1 -O3 -o index.js && webpack-dev-server -p",
+    "start-server": "webpack-dev-server -p",
+    "clean": "rimraf *.js *.wasm"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.16.2",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
