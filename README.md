@@ -21,4 +21,6 @@ source ./emsdk_env.sh
 
 run:
 
+in this project
+
 npm start
